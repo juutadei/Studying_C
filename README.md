@@ -1,6 +1,6 @@
 # Studying_C
 
-Bem-vindo ao meu cantinho de aprendizado em C! Aqui você encontrará uma coleção de códigos, projetos e desafios que estou explorando para aprimorar minhas habilidades em C. 😄
+Bem-vindo ao meu repositório de aprendizado em C! Aqui você encontrará uma coleção de códigos, projetos e desafios que estou explorando/explorei para aprimorar minhas habilidades em C. 😄
 
 ## O que você encontrará aqui 📂
 

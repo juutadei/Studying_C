@@ -24,8 +24,8 @@ int main() {
         	printf("Selecione -1 ou 0!\n");
 
         if (opcao == 0) {
-            printf("Jogador 1 = X\n");
-            printf("Jogador 2 = O\n");
+            printf("Jogador 1\n");
+            printf("Jogador 2\n");
             printf("Quem comeca (1 ou 2): ");
             scanf("%d", &jogador);
 

@@ -7,7 +7,7 @@ int main() {
     int i, j, opcao, linha, coluna, jogador, ganhou = 0, sumTotal = 0;
     int jogo[TAM][TAM];
 
-    printf("-----Bem Vindo ao Jogo da Velha!-----\n");
+    printf("-----BEM VINDO ao Jogo da Velha!-----\n");
 
     // Preencha o tabuleiro com valores iniciais visíveis para o jogador
     for (i = 0; i < TAM; i++) {

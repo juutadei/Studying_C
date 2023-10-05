@@ -11,7 +11,7 @@ int main(){
 	int i, sum = 0;
 	
 	do{
-		printf("Enter a number: ");
+		printf("Enter a int number: ");
 		scanf("%d", &num);
 	}while(num < 1);
 	

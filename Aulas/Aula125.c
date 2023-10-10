@@ -12,9 +12,17 @@ STRINGS
 	 		Se retornar 1, quer dizer que a primeira string na comparação acontece DEPOIS da segunda (no abc)
 	strcpy() -> copia strings
 	
-	//PROCURAR CARACTERES
+	PROCURAR CARACTERES
 	strchr() -> Procura a primeira ocorrencia do carac.
 	strrchr() -> Procura a última ocorrência do carac.
+	strstr() -> Procura por ocorrências (se aparece)
+	
+	UPPER CASE E LOWER CASE
+	strupr() -> Passa a string para maiuscula
+	strlwr() -> Passa a string para minuscula
+	
+	DIVIDIR UMA STRING
+	strtok() -> Divide uma string em tokens (Divide de acordo com o parametro passado)
 */
 
 int main(){
@@ -55,8 +63,10 @@ int main(){
 	printf("Palavra 1: %s\nPalavra 2: %s\n", palavra, palavra2);
 	*/
 	
+	/*
+	//PROCURAR NA STRING
 	char palavra[20] = {"abacate"};
-	char *letra; //É preciso declarar um ponteiro para guardar um aposição de uma string -> endereço de memória
+	char *letra; //É preciso declarar um ponteiro para guardar uma posição de uma string -> endereço de memória
 	
 	letra = strchr(palavra, 'a'); //busca a primeira letra 'a' dentro do vetor e salva em um endereço de memória 'letra'
 	
@@ -67,7 +77,35 @@ int main(){
 	
 	letra2 = strrchr(palavra, 'a'); //Busca a última ocorrencia da letra 'a'
 	
-	printf("%c\n", *(letra2 + 1));
+	printf("%c\n", *(letra2 + 1)); 
+	*/
+	
+	/*
+	char palavra[50] = {"Bom dia amigos."};
+	char str[] = {"dia"}; //A substring que será buscada
+	char *ptr; //Declara um ponteiro para armazenar um endereço da string
+	
+	ptr = strstr(palavra, str);
+	
+	if(ptr) //quer dizer que ptr é diferente de NULL, ou seja, existe
+		printf("%c%c%c\n", *ptr, *(ptr + 1), *(ptr + 2)); //Acha o primeiro endereço de memória em que a substring 
+	else												  // está armazenada -> dps soma para imprimir as próximas.
+		printf("Ponteiro eh nulo.\n");
+	*/
+	
+	//DIVIDIR UMA STRING
+	
+	char palavra[50] = {"Bom dia amigos."};
+	char *ptr;
+	
+	ptr = strtok(palavra, " "); //Divide a string palavra de acordo com os espaços
+	
+	while(ptr){
+		printf("Token: %s\n", ptr);
+		cont++;
+		ptr = strtok(NULL, " ");
+	}
+	
 	
 	return 0;
 }

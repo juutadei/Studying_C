@@ -18,11 +18,6 @@ int main(){
 	
 	printf("%d\n", res);
 	
-	/*
-	for(i = n; i > 0; i--)
-		i * i - 1;
-	*/
-	
 	return 0;
 }
 
@@ -33,6 +28,5 @@ int fibonacci(int n){
 		return 1;
 	else{
 		return n * fibonacci(n - 1);
-		//return res;
 	}
 }

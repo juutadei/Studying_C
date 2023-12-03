@@ -6,7 +6,7 @@
 	É a função recomendada para leitura de strings
 	
 	fgets(word, 80, stdin) -> Espera três argumentos, o primeiro sendo a varíavel que vai guardar a string,
-	o segundo o tamnho do vetor (quanto carac. aceita) e o terceiro é da onde você vai inserir os dados, 
+	o segundo o tamanho do vetor (quanto carac. aceita) e o terceiro é da onde você vai inserir os dados, 
 	a entrada padrão (teclado).
 	
 	fgets(...) Insere caracteres até que encontre '\n' ou EOF, ou que n - 1 bytes sejam lidos. Um caractere

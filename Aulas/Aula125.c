@@ -97,6 +97,7 @@ int main(){
 	
 	char palavra[50] = {"Bom dia amigos."};
 	char *ptr;
+	int cont = 0;
 	
 	ptr = strtok(palavra, " "); //Divide a string palavra de acordo com os espaços
 	

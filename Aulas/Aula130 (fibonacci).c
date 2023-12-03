@@ -13,7 +13,7 @@ int main(){
 	
 	printf("Enter a number: ");
 	scanf("%d", &num);
-	
+		
 	res = fibonacci(num);
 	
 	printf("%d\n", res);
